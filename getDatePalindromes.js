@@ -44,10 +44,12 @@ function stringifyDate(d, m, y){
   if(d < 10){ 
     d = "0"+d;
   }else{
-    d = ""+d;
+    d += "";
   }
   if(m < 10){
     m = "0"+m;
+  }else{
+    m += "";
   }
   
   return d+m+y;
